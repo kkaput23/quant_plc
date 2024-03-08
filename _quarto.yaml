@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Intro to R for School Finance Equity, PIE Summit 2023"
+  title: "Quantitative Peer Learning Community R Training"
   sidebar:
     background: primary
     logo: "images/primary_one-color_reverse.png"
@@ -14,8 +14,8 @@ website:
         text: Home
       - href: setup.qmd
         text: Setup
-      - href: scripts.qmd
-        text: Scripts
+      - href: schedule.qmd
+        text: Schedule
      
 format:
   html:

@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -112,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup.html">Setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./schedule.html">Schedule</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -145,13 +111,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -165,9 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-download-and-install-r" id="toc-step-1-download-and-install-r" class="nav-link active" data-scroll-target="#step-1-download-and-install-r">Step 1: Download and install R</a></li>
-  <li><a href="#step-2-install-rstudio" id="toc-step-2-install-rstudio" class="nav-link" data-scroll-target="#step-2-install-rstudio">Step 2: Install RStudio</a></li>
-  <li><a href="#step-3-install-required-packages" id="toc-step-3-install-required-packages" class="nav-link" data-scroll-target="#step-3-install-required-packages">Step 3: Install required packages</a></li>
+  <li><a href="#class-schedule" id="toc-class-schedule" class="nav-link active" data-scroll-target="#class-schedule">Class Schedule</a></li>
   </ul>
 </nav>
     </div>
@@ -193,30 +157,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="step-1-download-and-install-r" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-download-and-install-r">Step 1: Download and install R</h2>
-<p>The <strong>R</strong> language is open-source software available at through the <strong>C</strong>omprehensive <strong>R A</strong>rchive <strong>N</strong>etwork, <a href="https://cloud.r-project.org"><strong>CRAN</strong></a>. Select the version of R that is compatiable with your operating system.</p>
-<p>Once you’ve downloaded the installer, go ahead and run it to install R on your computer.</p>
-</section>
-<section id="step-2-install-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-install-rstudio">Step 2: Install RStudio</h2>
-<p><strong>RStudio</strong> is an open-source <em>integrated development environment</em> (IDE) designed to improve your R programming experience. It is available to <a href="https://posit.co/download/rstudio-desktop/">download through Posit</a>, a public benefit corporation (PBC) that <a href="https://posit.co/products/open-source">develops open-source software</a>.</p>
-<p>Again, once you’ve downloaded the installer, go ahead and run it to install RStudio on your computer.</p>
-</section>
-<section id="step-3-install-required-packages" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-install-required-packages">Step 3: Install required packages</h2>
-<p><strong>Packages</strong> help make R easier to use by providing useful functions and data. During this training, we will use the following packages:</p>
-<ul>
-<li><code>tidyverse</code>: This <a href="https://www.tidyverse.org/">package</a> is actually a collection of packages that provide essential tools for data cleaning (<a href="https://dplyr.tidyverse.org/">dplyr</a>) and visualization (<a href="https://ggplot2.tidyverse.org/">ggplot2</a>). Census Bureau that has been <a href="http://data.edbuild.org/">cleaned using EdBuild’s methodology for handling such data</a>.</li>
-<li><code>remotes</code>: This package allows you to download packages hosted on GitHub, such as <code>edbuildr</code>.</li>
-<li><code>readxl</code>: This package allows you to read in excel documents to do data cleaning and analysis.</li>
-</ul>
-<p>To install these packages, open RStudio and copy the code below. In the “Console” pane, paste the code and run it by hitting return:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"readxl"</span>, <span class="st">"remotes"</span>))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"edbuild/edbuildr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="class-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="class-schedule">Class Schedule</h2>
+<p>All R classes will take place from 11:00 AM - 12:00 PM Central Time. We will also be recording the R classes in case someone is unable to make the course. Krista will host weekly office hours to provide R support and answer questions.</p>
+<table class="table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 52%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Week</strong></td>
+<td style="text-align: center;"><strong>Date</strong></td>
+<td style="text-align: left;"><strong>Description</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Week 1</td>
+<td style="text-align: center;">March 19</td>
+<td style="text-align: left;">Introduction to R, RStudio, Git, and Github</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Week 2</td>
+<td style="text-align: center;">April 9</td>
+<td style="text-align: left;">Basic data analysis in R (tidyverse)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Week 3</td>
+<td style="text-align: center;">April 23</td>
+<td style="text-align: left;">Basic data visualization in R (ggplot2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Week 4</td>
+<td style="text-align: center;">May 14</td>
+<td style="text-align: left;">Data cleaning and processing in R part 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Week 5</td>
+<td style="text-align: center;">June 11</td>
+<td style="text-align: left;">Data cleaning and processing in R part 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Week 6</td>
+<td style="text-align: center;">July 23</td>
+<td style="text-align: left;">Census data in R (tidycensus)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Week 7</td>
+<td style="text-align: center;">August 13</td>
+<td style="text-align: left;">Advanced data visualization in R (ggplot2/plotly)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Week 8</td>
+<td style="text-align: center;">September 3</td>
+<td style="text-align: left;">Creating maps in R (sf and leaflet)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Week 9</td>
+<td style="text-align: center;">September 24</td>
+<td style="text-align: left;">Introduction to Quarto and creating presentations in R (Quarto)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Week 10</td>
+<td style="text-align: center;">October 22</td>
+<td style="text-align: left;">Debrief the course</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
