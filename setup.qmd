@@ -23,16 +23,16 @@ Again, once you've downloaded the installer, go ahead and run it to install RStu
 **Packages** help make R easier to use by providing useful functions and data. During this training, we will use the following packages:
 
 - `tidyverse`: This [package](https://www.tidyverse.org/) is actually a collection of packages that provide essential tools for data cleaning ([dplyr](https://dplyr.tidyverse.org/)) and visualization ([ggplot2](https://ggplot2.tidyverse.org/)).
-- `viridis`: This package provides color palettes that are [more accessible for people with various forms of color blindness](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html).
-- `edbuildr`: This [package](http://viz.edbuild.org/workshops/edbuildr/) was developed by [EdBuild](https://edbuild.org/) to provide more accessible school finance data. It allows you to download data from the National Center for Educaiton Statistics (NCES) and the U.S. Census Bureau that has been [cleaned using EdBuild's methodology for handling such data](http://data.edbuild.org/).
+ Census Bureau that has been [cleaned using EdBuild's methodology for handling such data](http://data.edbuild.org/).
 - `remotes`: This package allows you to download packages hosted on GitHub, such as `edbuildr`.
+- `readxl`: This package allows you to read in excel documents to do data cleaning and analysis. 
 
 To install these packages, open RStudio and copy the code below. In the "Console" pane, paste the code and run it by hitting return:
 
 ```{r}
 #| eval: false
 
-install.packages(c("tidyverse", "viridis", "remotes"))
+install.packages(c("tidyverse", "readxl", "remotes"))
 
 remotes::install_github("edbuild/edbuildr")
 ```
